@@ -1,0 +1,8 @@
+service stbhttp /system/bin/sh /system/stbviewer/start.sh
+    class main
+    user root
+    group root inet
+    disabled
+
+on property:sys.boot_completed=1
+    start stbhttp

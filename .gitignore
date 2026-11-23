@@ -1,0 +1,13 @@
+# build toolchain (Android SDK tools, ~123 MB)
+audio/bt/
+# intermediates
+*.class
+audio/out/
+audio/out2/
+# private keys — regenerate with keytool (see README)
+certs/*.pfx
+box/certs/*.jks
+box/certs/stb-key.der
+
+audio/*.pcm
+*.log
